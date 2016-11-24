@@ -1,0 +1,47 @@
+
+
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#/homepage" class="brand-logo"><div><img ng-src="assets/images/fav.png" width="40" height="40"style="vertical-align:middle"/> <span style="vertical-align:middle">IGS</span></div></a>
+    <ul class="right hide-on-small-only">
+      <li><a href="#/lastPhoto">Última medida</a></li>
+      <li><a href="#/graph">Gráficos</a></li>
+      <li><a href="#/gallery">Medidas passadas</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#/lastPhoto">Última medida</a></li>
+      <li><a href="#/graph">Gráficos</a></li>
+      <li><a href="#/gallery">Medidas passadas</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">Menu</i></a>
+  </div>
+</nav>
+
+<main>
+  <br><br>
+  <div class="hide-on-med-and-down">
+    <br><br><br>
+  </div>
+
+<!-- IDEA:
+<script src="js/materialize.js"></script>
+
+
+  <div class="row">
+    <div class="col m2 l1 s12">
+      <img class="materialboxed read-box" width="100%" height= "100%" data-caption="Temperatura = 28°C | Umidade = 60% | Medida realizada as 18:45 20/10/2016" ng-src="/frontend/assets/images/fav.png">
+    </div>
+  </div>
+
+   -->
+  <!--  Scripts-->
+  <div class="row">
+    <div class="col m2 l2 s12" ng-repeat ="st in statistics track by $index">
+      <img width="100%" height= "100%" data-caption="Temperatura = {{st.temperature}} C | Umidade = {{st.humidity}} % | Medida realizada as {{st.date}}" src="{{st.image}}">
+
+    </div>
+  </div>
+
+
+</main>

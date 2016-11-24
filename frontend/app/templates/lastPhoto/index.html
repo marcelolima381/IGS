@@ -1,0 +1,78 @@
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#/homepage" class="brand-logo"><div><img src="assets/images/fav.png" width="40" height="40"style="vertical-align:middle"/> <span style="vertical-align:middle">IGS</span></div></a>
+    <ul class="right hide-on-small-only">
+      <li><a href="#/lastPhoto">Ultima medida</a></li>
+      <li><a href="#/graph">Gráficos</a></li>
+      <li><a href="#/gallery">Medidas passadas</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#/lastPhoto">Ultima medida</a></li>
+      <li><a href="#/graph">Gráficos</a></li>
+      <li><a href="#/gallery">Medidas passadas</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+
+  <main>
+    <br><br>
+    <div class="hide-on-med-and-down">
+      <br><br><br>
+    </div>
+
+    <div class="row">
+      <div class="col s10 offset-s1 z-depth-3 green lighten-4 round">
+
+        <div class="row">
+          <div class="col s12">
+            <h4 class="center">Última medida</h4>
+          </div>
+        </div>
+
+        <div class="row hide-on-med-and-up">
+          <div class="col s12 m12 center">
+            <img class="round"src="{{statistic.image}}" width="300" height="225" />
+          </div>
+
+          <div class="col s12 m12 l12 green lighten-3 round ">
+            <h6>Temperatura = {{statistic.temperature}} C</h6>
+            <h6>Umidade = {{statistic.humidity}} %</h6>
+            <h6>Umidade amostra de solo = {{statistic.moisture}} %</h6>
+            <h6>Medida realizada às {{statistic.date}}</h6>
+          </div>
+        </div>
+
+        <div class="row hide-on-small-only hide-on-large-only">
+          <div class="col s12 m12 center">
+            <img class="round"src="{{statistic.image}}" width="500" height="350" />
+          </div>
+
+          <div class="col s12 m10 l10 offset-l1 offset-m1 green lighten-3 round ">
+            <h6>Temperatura = {{statistic.temperature}} C</h6>
+            <h6>Umidade = {{statistic.humidity}} %</h6>
+            <h6>Umidade amostra de solo = {{statistic.moisture}} %</h6>
+            <h6>Medida realizada às {{statistic.date}}</h6>
+          </div>
+        </div>
+
+        <div class="row hide-on-med-and-down">
+          <div class="col l5 m8">
+            <img class="round"src="{{statistic.image}}" width="640" height="480" />
+          </div>
+          <br><br><br><br><br>
+          <div class="col l4 m1 offset-l2 green lighten-3 round ">
+            <div class="col s12 m10 l10 offset-l1 offset-m1 green lighten-3 round ">
+              <h5>Temperatura = {{statistic.temperature}} C</h5>
+              <h5>Umidade = {{statistic.humidity}} %</h5>
+              <h5>Umidade amostra de solo = {{statistic.moisture}} %</h5>
+              <h5>Medida realizada às {{statistic.date}}</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
